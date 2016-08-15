@@ -70,6 +70,7 @@
     "lodash": "^4.14.0",
     "merge-descriptors": "^1.0.1",
     "methods": "^1.1.2",
+    "mkdirp": "^0.5.1",
     "mock-req": "^0.2.0",
     "mock-res": "^0.3.0",
     "moment": "^2.14.1",
