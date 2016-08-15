@@ -1,0 +1,25 @@
+{
+  "name": "leaf-test",
+  "version": "0.0.1",
+  "description": "examples for Leaf app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Leaf",
+    "leaf-http",
+    "koa"
+  ],
+  "author": "xyezir",
+  "license": "MIT",
+  "services": {
+    "leaf-test": "0.0.1"
+  },
+  "dependencies": {
+    "leafjs": "*"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  }
+}

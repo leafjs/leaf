@@ -1,0 +1,28 @@
+language: node_js
+sudo: required
+before_install:
+  - source <(curl -SLs https://raw.githubusercontent.com/xyezir/leafjs/${TRAVIS_BRANCH}/prepareTravis.sh)
+install:
+  - npm install -g codecov
+script:
+  - npm test
+  - codecov
+node_js:
+  - "5"
+  - "4"
+env:
+  - CXX=g++-4.8 CC=gcc-4.8
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+      - gcc-4.8
+      - m4
+      - flex
+  code_climate:
+    repo_token: 4c3d3b14a544b2fbd7ec93c32a088807466bb578eff6dca7be7b8a995ca570dc
+cache:
+  directories:
+    - node_modules

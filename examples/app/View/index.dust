@@ -1,0 +1,4 @@
+{>"common/base.layout.dust"/}
+{<content}
+  <h3>hello world!</h3>
+{/content}

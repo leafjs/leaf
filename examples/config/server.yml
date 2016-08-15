@@ -1,0 +1,12 @@
+development:
+  port: 8000
+  mdns:
+    ad:
+      interface: lo
+      domain: localhost
+test:
+  port: 8000
+  mdns:
+    ad:
+      interface: lo
+      domain: localhost
