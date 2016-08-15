@@ -1,7 +1,7 @@
 "use strict";
 var chai = require("chai"),
   expect = chai.expect,
-  JWT = require('../lib/Http/provider/jwt.js'),
+  JWT = require('../lib/http/provider/jwt.js'),
   jwt = new JWT();
 
 describe('Jwt should sign correctly', function(){
