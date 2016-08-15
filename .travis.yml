@@ -1,7 +1,7 @@
 language: node_js
 sudo: required
 before_install:
-  - source <(curl -SLs https://raw.githubusercontent.com/xyezir/leafjs/${TRAVIS_BRANCH}/prepareTravis.sh)
+  - source <(curl -SLs https://raw.githubusercontent.com/leafjs/leaf/${TRAVIS_BRANCH}/prepareTravis.sh)
 install:
   - npm install -g codecov
   - npm install -g codeclimate-test-reporter
