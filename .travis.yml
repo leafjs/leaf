@@ -4,10 +4,14 @@ before_install:
   - source <(curl -SLs https://raw.githubusercontent.com/xyezir/leafjs/${TRAVIS_BRANCH}/prepareTravis.sh)
 install:
   - npm install -g codecov
+  - npm install -g codeclimate-test-reporter
 script:
   - npm test
   - codecov
+after_script:
+  - codeclimate-test-reporter < lcov.info
 node_js:
+  - "6"
   - "5"
   - "4"
 env:
@@ -21,8 +25,6 @@ addons:
       - gcc-4.8
       - m4
       - flex
-  code_climate:
-    repo_token: 4c3d3b14a544b2fbd7ec93c32a088807466bb578eff6dca7be7b8a995ca570dc
 cache:
   directories:
     - node_modules
