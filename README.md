@@ -19,7 +19,6 @@ npm install leafjs --save
 ./node_modules/.bin/leafjs serve
 ```
 
-
 [npm-image]: https://img.shields.io/npm/v/leafjs.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/leafjs
 

@@ -25,6 +25,8 @@ addons:
       - gcc-4.8
       - m4
       - flex
+  code_climate:
+    repo_token: 46d83d59992bcdc800fc5b7f22dce911bc64959a70e59f6396607c0cd6dbb026
 cache:
   directories:
     - node_modules
