@@ -7,7 +7,7 @@
 
 # Leafjs
 
-[Koa](http://koajs.com) Framework Suite, HTTP/2 and ES6 Module ready.
+[Leafjs](https://github.com/leafjs/leaf) is [Koa](http://koajs.com) Framework Suite based on [koala-puree](https://github.com/csballz/koala-puree), HTTP/2 and ES6 Module ready.
 
 ## Usage
 
