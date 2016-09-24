@@ -1,6 +1,6 @@
 {
     "name": "leafjs",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Koa Framework Suite, HTTP/2 and ES6 Module ready",
     "main": "index.js",
     "bin": {
