@@ -4,9 +4,17 @@ development:
     ad:
       interface: lo
       domain: localhost
+  templates:
+    engine: react
+    precompile: true
+    cache: true
 test:
   port: 8000
   mdns:
     ad:
       interface: lo
       domain: localhost
+  templates:
+    engine: react
+    precompile: true
+    cache: true

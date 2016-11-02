@@ -1,6 +1,6 @@
 var run = require("gulp-run");
 var gulp = require("gulp");
-var debug = require("debug")("leafjs:gulp");
+var debug = require("debug")("leaf:gulp");
 gulp.task("cleanjsdocs", function(cb){
   return require("del")(["docs/jsdoc"], cb);
 });

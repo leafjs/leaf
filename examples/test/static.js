@@ -8,40 +8,45 @@ var chai = require("chai"),
 
 chai.use(chaiHttp);
 
-describe('leafjs http Static From Public folder', function(){
-  var app = new TestApp(), app, sio, socket, browser;
+describe('leafjs http Static From Public folder', function() {
+  var app = new TestApp(),
+    app, sio, socket, browser;
   before(function(done) {
     this.timeout(5000);
-    app.start().then(function(tapp){
+    app.start().then(function(tapp) {
       done();
-    },function(err){
+    }, function(err) {
       done(err);
     });
   });
-  after(function(done){
+  after(function(done) {
     this.timeout(5000);
-    app.close().then(function(){
+    app.close().then(function() {
       done();
-    },function(err){
+    }, function(err) {
       done(err);
     });
   });
-  it("should get a test.js", function(done){
+  it("should get a test.js", function(done) {
     this.timeout(5000);
     chai.request("http://localhost:8000")
       .get("/static/test.js")
-      .end(function(err, res){
-        if ( err ) { return done(err); }
+      .end(function(err, res) {
+        if (err) {
+          return done(err);
+        }
         expect(res).to.have.status(200);
         done();
       });
   });
-  it("should get a index.dust", function(done){
+  it("should get a index.dust", function(done) {
     this.timeout(5000);
     chai.request("http://localhost:8000")
       .get("/test/index")
-      .end(function(err, res){
-        if ( err ) { return done(err); }
+      .end(function(err, res) {
+        if (err) {
+          return done(err);
+        }
         expect(res).to.have.status(200);
         done();
       });
