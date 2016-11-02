@@ -64,7 +64,7 @@
     "leaf-dust": "0.0.4",
     "leaf-koa": "^1.0.3",
     "leaf-mdns": "^1.0.2",
-    "leaf-react": "0.0.1",
+    "leaf-react": "0.0.2",
     "merge-descriptors": "^1.0.1",
     "methods": "^1.1.2",
     "mkdirp": "^0.5.1",
