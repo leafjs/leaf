@@ -1,5 +1,4 @@
 "use strict";
-require("any-promise/register")("bluebird");
 
 const debug = require("debug");
 
